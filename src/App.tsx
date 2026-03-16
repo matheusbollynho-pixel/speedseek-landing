@@ -285,6 +285,16 @@ export default function App() {
       {/* ── DEMO ── */}
       <SectionWrap id="demo">
         <SectionHead tag="Demonstração" title="Veja como é simples usar" sub="Interface limpa e intuitiva, pensada para funcionar perfeitamente no celular" />
+        {/* YouTube Video */}
+        <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.6)', border: `1px solid ${BORDER}`, marginBottom: 56, position: 'relative', paddingTop: '56.25%' }}>
+          <iframe
+            src="https://www.youtube.com/embed/MDnr712zrXo?rel=0&modestbranding=1"
+            title="SpeedSeek OS - Demonstração"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+          />
+        </div>
         {/* Desktop screenshot */}
         <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.6)', border: `1px solid ${BORDER}`, marginBottom: 56 }}>
           <img src="/dashboard-desktop.jpg" alt="SpeedSeek OS - Dashboard Desktop" style={{ width: '100%', display: 'block' }} />
