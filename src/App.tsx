@@ -289,6 +289,28 @@ export default function App() {
           <img src="/dashboard-desktop.jpg" alt="SpeedSeek OS - Dashboard Desktop" style={{ width: '100%', display: 'block' }} />
         </div>
 
+        {/* PDF preview */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 48, alignItems: 'center', marginBottom: 56 }}>
+          <div>
+            <Tag>PDF Profissional</Tag>
+            <H2>Ordem de Serviço em PDF com um clique</H2>
+            <p style={{ color: MUTED, fontSize: 16, lineHeight: 1.7, marginBottom: 24 }}>
+              Gere um PDF completo com todos os dados da OS — cliente, veículo, serviços, peças, valores, checklist e assinaturas. Envie direto pelo WhatsApp em segundos.
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 12 }}>
+              {['Dados completos do cliente e veículo', 'Lista de peças e serviços com valores', 'Checklist de inspeção e assinaturas', 'Envio automático pelo WhatsApp'].map(item => (
+                <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <CheckCircle size={16} color={R} style={{ flexShrink: 0 }} />
+                  <span style={{ color: MUTED, fontSize: 14 }}>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{ boxShadow: '0 24px 64px rgba(0,0,0,0.5)', borderRadius: 8, overflow: 'hidden', border: `1px solid ${BORDER}` }}>
+            <img src="/pdf-preview.jpg" alt="PDF Ordem de Serviço SpeedSeek OS" style={{ width: '100%', display: 'block' }} />
+          </div>
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 56, alignItems: 'center' }}>
           {/* Phone with real screenshot */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
