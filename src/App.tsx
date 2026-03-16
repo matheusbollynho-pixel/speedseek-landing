@@ -100,31 +100,6 @@ const FeatCard = ({ icon, title, desc }: { icon: React.ReactNode; title: string;
   </div>
 )
 
-/* ────────── Demo Screen Card ────────── */
-const ScreenCard = ({ icon, title, desc, active }: { icon: React.ReactNode; title: string; desc: string; active?: boolean }) => (
-  <div style={{
-    background: active ? CARD2 : CARD,
-    border: `1px solid ${active ? 'rgba(227,0,15,0.35)' : BORDER}`,
-    borderRadius: 16, overflow: 'hidden',
-    transition: 'border-color .2s',
-  }}>
-    <div style={{
-      minHeight: 140, display: 'flex', flexDirection: 'column' as const,
-      alignItems: 'center', justifyContent: 'center', gap: 12,
-      background: active ? 'rgba(227,0,15,0.05)' : '#0d0f18',
-      padding: 28, borderBottom: `1px solid ${BORDER}`,
-    }}>
-      <div style={{ width: 56, height: 56, borderRadius: 14, background: active ? R : 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <span style={{ color: active ? '#fff' : MUTED }}>{icon}</span>
-      </div>
-    </div>
-    <div style={{ padding: '18px 20px' }}>
-      <h4 style={{ fontWeight: 700, fontSize: 14, marginBottom: 6, color: WHITE }}>{title}</h4>
-      <p style={{ color: MUTED, fontSize: 13, lineHeight: 1.6 }}>{desc}</p>
-    </div>
-  </div>
-)
-
 /* ────────── Benefit Row ────────── */
 const BRow = ({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) => (
   <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
