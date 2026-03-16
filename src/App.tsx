@@ -251,10 +251,16 @@ export default function App() {
           <p style={{ textAlign: 'center', color: MUTED, fontSize: 13, fontWeight: 600, letterSpacing: 1.2, textTransform: 'uppercase' as const, marginBottom: 24 }}>
             Oficinas que já usam o SpeedSeek OS
           </p>
-          <div style={{ display: 'flex', gap: 40, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' as const }}>
-            <img src="/bamotos.png" alt="BA Motos" style={{ height: 40, opacity: 0.7, filter: 'brightness(0) invert(1)' }} />
-            <img src="/lobao.png" alt="Lobão Motos" style={{ height: 40, opacity: 0.7, filter: 'brightness(0) invert(1)' }} />
-            <img src="/bandara-logo.png" alt="Bandara Motos" style={{ height: 40, opacity: 0.7, filter: 'brightness(0) invert(1)' }} />
+          <div style={{ display: 'flex', gap: 20, justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' as const }}>
+            {[
+              { src: '/bamotos.png', alt: 'BA Motos' },
+              { src: '/lobao.png', alt: 'Lobão Motos' },
+              { src: '/bandara-logo.png', alt: 'Bandara Motos' },
+            ].map(({ src, alt }) => (
+              <div key={alt} style={{ background: '#fff', borderRadius: 12, padding: '10px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 140, boxShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
+                <img src={src} alt={alt} style={{ height: 44, objectFit: 'contain' }} />
+              </div>
+            ))}
           </div>
         </div>
       </section>
