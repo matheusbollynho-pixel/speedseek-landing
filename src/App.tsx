@@ -258,7 +258,7 @@ export default function App() {
               { src: '/bandara-logo.png', alt: 'Bandara Motos' },
             ].map(({ src, alt }) => (
               <div key={alt} style={{ background: '#0d1b2e', borderRadius: 12, padding: '12px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 140, border: '1px solid rgba(255,255,255,0.1)' }}>
-                <img src={src} alt={alt} style={{ height: 48, objectFit: 'contain' }} />
+                <img src={src} alt={alt} style={{ height: alt === 'Bandara Motos' ? 70 : 48, objectFit: 'contain' }} />
               </div>
             ))}
           </div>
