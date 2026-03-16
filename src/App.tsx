@@ -284,6 +284,11 @@ export default function App() {
       {/* ── DEMO ── */}
       <SectionWrap id="demo">
         <SectionHead tag="Demonstração" title="Veja como é simples usar" sub="Interface limpa e intuitiva, pensada para funcionar perfeitamente no celular" />
+        {/* Desktop screenshot */}
+        <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.6)', border: `1px solid ${BORDER}`, marginBottom: 56 }}>
+          <img src="/dashboard-desktop.jpg" alt="SpeedSeek OS - Dashboard Desktop" style={{ width: '100%', display: 'block' }} />
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 56, alignItems: 'center' }}>
           {/* Phone with real screenshot */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
