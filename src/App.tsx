@@ -400,9 +400,9 @@ export default function App() {
         <SectionHead tag="Depoimentos" title="Quem usa aprova" sub="Oficinas que já transformaram a gestão com o SpeedSeek OS" />
         <Grid cols="repeat(auto-fit,minmax(280px,1fr))">
           {[
-            { text:'"O SpeedSeek OS transformou minha oficina. Antes era tudo no papel, hoje controlo tudo pelo celular. Recomendo muito!"', name:'João Carlos', role:'Proprietário, BA Motos', img:'/bamotos.png' },
-            { text:'"A pesquisa de satisfação automática foi o diferencial. Meus clientes adoram receber o feedback e eu sei onde melhorar."', name:'Rafael Lobão', role:'Gestor, Lobão Motos', img:'/lobao.png' },
-            { text:'"Em 10 anos de oficina nunca tive um sistema tão fácil de usar. Qualquer funcionário aprende em minutos."', name:'Carlos Andrade', role:'Mecânico proprietário', img:'/bandara-logo.png' },
+            { text:'"O SpeedSeek OS transformou minha oficina. Antes era tudo no papel, hoje controlo tudo pelo celular. Recomendo muito!"', name:'Eduardo Silva', role:'Proprietário, BA Motos', img:'/bamotos.png' },
+            { text:'"A pesquisa de satisfação automática foi o diferencial. Meus clientes adoram receber o feedback e eu sei onde melhorar."', name:'Alisson Rodrigues', role:'Gestor, Lobão Motos', img:'/lobao.png' },
+            { text:'"Em 10 anos de oficina nunca tive um sistema tão fácil de usar. Qualquer funcionário aprende em minutos."', name:'Matheus Silva', role:'Proprietário, Bandara Motos', img:'/bandara-logo.png' },
           ].map((t,i) => (
             <div key={i} style={{ background:CARD, border:`1px solid ${BORDER}`, borderRadius:16, padding:28 }}>
               <div style={{ display:'flex', gap:3, marginBottom:14 }}>
