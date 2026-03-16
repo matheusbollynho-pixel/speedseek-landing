@@ -7,6 +7,7 @@ import {
 import './index.css'
 
 const WA = 'https://wa.me/5575988388629?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
+const waPlano = (plano: string) => `https://wa.me/5575988388629?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${encodeURIComponent(plano)}%20do%20SpeedSeek%20OS`
 const R = '#E3000F'
 const BG = '#0d0f18'
 const CARD = '#12151f'
@@ -385,7 +386,7 @@ export default function App() {
                   </li>
                 ))}
               </ul>
-              <a href={WA} target="_blank" rel="noopener noreferrer"
+              <a href={waPlano(p.name)} target="_blank" rel="noopener noreferrer"
                 style={{ display:'block', textAlign:'center', padding:'13px', borderRadius:10, fontWeight:700, fontSize:14, textDecoration:'none', background: p.hot ? '#fff' : R, color: p.hot ? R : '#fff' }}>
                 Começar agora
               </a>
