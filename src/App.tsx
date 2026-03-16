@@ -66,57 +66,25 @@ const Grid = ({ cols, gap = 20, children }: { cols: string; gap?: number; childr
   <div style={{ display: 'grid', gridTemplateColumns: cols, gap }}>{children}</div>
 )
 
-/* ────────── Dashboard Mockup ────────── */
+/* ────────── Phone Mockup with real screenshot ────────── */
 const Mockup = () => (
-  <div style={{
-    background: '#10131e', border: `1px solid ${BORDER}`, borderRadius: 18,
-    overflow: 'hidden', boxShadow: '0 40px 100px rgba(0,0,0,0.6)',
-  }}>
-    {/* title bar */}
-    <div style={{ background: '#080a12', padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, borderBottom: `1px solid ${BORDER}` }}>
-      {['#ff5f57', '#febc2e', '#28c840'].map(c => <div key={c} style={{ width: 10, height: 10, borderRadius: '50%', background: c }} />)}
-      <div style={{ flex: 1, background: '#10131e', borderRadius: 4, height: 22, marginLeft: 8, display: 'flex', alignItems: 'center', paddingLeft: 10 }}>
-        <span style={{ fontSize: 11, color: '#374151' }}>app.speedseek.os/dashboard</span>
+  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{
+      position: 'relative' as const,
+      width: 260,
+      background: '#0a0a0a',
+      borderRadius: 44,
+      padding: '14px 10px',
+      boxShadow: '0 0 0 2px #333, 0 40px 100px rgba(0,0,0,0.7)',
+    }}>
+      {/* notch */}
+      <div style={{ width: 80, height: 22, background: '#0a0a0a', borderRadius: 12, margin: '0 auto 6px', position: 'relative' as const, zIndex: 2 }} />
+      {/* screen */}
+      <div style={{ borderRadius: 28, overflow: 'hidden', lineHeight: 0 }}>
+        <img src="/dashboard-screenshot.jpg" alt="SpeedSeek OS Dashboard" style={{ width: '100%', display: 'block' }} />
       </div>
-    </div>
-    {/* body */}
-    <div style={{ padding: 18 }}>
-      {/* stat cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 10, marginBottom: 16 }}>
-        {[['OS Abertas','24','#3b82f6'],['Em Andamento','11','#f59e0b'],['Concluídas','187','#10b981'],['Faturamento','R$18k', R]].map(([l,v,c]) => (
-          <div key={l} style={{ background: '#080a12', borderRadius: 8, padding: '10px 12px', border: `1px solid ${BORDER}` }}>
-            <div style={{ fontSize: 10, color: MUTED, marginBottom: 4 }}>{l}</div>
-            <div style={{ fontSize: 20, fontWeight: 800, color: c as string }}>{v}</div>
-          </div>
-        ))}
-      </div>
-      {/* mini chart bar */}
-      <div style={{ background: '#080a12', borderRadius: 8, padding: 12, border: `1px solid ${BORDER}`, marginBottom: 12 }}>
-        <div style={{ fontSize: 10, color: MUTED, marginBottom: 8 }}>Faturamento — últimos 7 dias</div>
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 6, height: 36 }}>
-          {[40,65,50,80,55,90,70].map((h,i) => (
-            <div key={i} style={{ flex: 1, height: `${h}%`, borderRadius: 3, background: i === 5 ? R : 'rgba(255,255,255,0.08)' }} />
-          ))}
-        </div>
-      </div>
-      {/* OS list */}
-      <div style={{ background: '#080a12', borderRadius: 8, border: `1px solid ${BORDER}`, overflow: 'hidden' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 80px 60px', padding: '7px 12px', borderBottom: `1px solid ${BORDER}`, fontSize: 10, color: MUTED, fontWeight: 600 }}>
-          <span>CLIENTE</span><span>SERVIÇO</span><span>STATUS</span><span>VALOR</span>
-        </div>
-        {[
-          ['João Silva','Troca de óleo','Concluída','#10b981','R$120'],
-          ['Maria Santos','Revisão completa','Andamento','#f59e0b','R$380'],
-          ['Pedro Lima','Freios dianteiros','Aberta','#3b82f6','R$250'],
-        ].map(([name,svc,status,color,val], i) => (
-          <div key={i} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 80px 60px', padding: '8px 12px', borderBottom: i < 2 ? `1px solid ${BORDER}` : 'none', fontSize: 11, alignItems: 'center' }}>
-            <span style={{ fontWeight: 600, color: WHITE }}>{name}</span>
-            <span style={{ color: MUTED }}>{svc}</span>
-            <span style={{ color: color as string, fontWeight: 600 }}>{status}</span>
-            <span style={{ color: WHITE }}>{val}</span>
-          </div>
-        ))}
-      </div>
+      {/* home bar */}
+      <div style={{ width: 80, height: 4, background: '#444', borderRadius: 4, margin: '10px auto 0' }} />
     </div>
   </div>
 )
@@ -341,13 +309,42 @@ export default function App() {
       {/* ── DEMO ── */}
       <SectionWrap id="demo">
         <SectionHead tag="Demonstração" title="Veja como é simples usar" sub="Interface limpa e intuitiva, pensada para funcionar perfeitamente no celular" />
-        <Grid cols="repeat(auto-fit,minmax(240px,1fr))">
-          <ScreenCard active icon={<BarChart3 size={26} />} title="Dashboard" desc="Visão geral em tempo real: OS abertas, faturamento do mês, equipe e alertas de crise." />
-          <ScreenCard icon={<FileText size={26} />} title="Nova Ordem de Serviço" desc="Preencha cliente, veículo, serviço e valor em menos de 1 minuto. Gere PDF com um clique." />
-          <ScreenCard icon={<Users size={26} />} title="Gestão de Clientes" desc="Histórico completo de cada cliente: todos os atendimentos, veículos e contatos em um lugar." />
-          <ScreenCard icon={<TrendingUp size={26} />} title="Relatórios" desc="Gráficos e métricas por período. Saiba exatamente quanto sua oficina está faturando." />
-        </Grid>
-        <div style={{ marginTop: 48, background: CARD, border: `1px solid ${BORDER}`, borderRadius: 20, padding: 'clamp(28px,4vw,48px)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 24 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 56, alignItems: 'center' }}>
+          {/* Phone with real screenshot */}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div style={{
+              position: 'relative' as const, width: 240,
+              background: '#0a0a0a', borderRadius: 44, padding: '14px 10px',
+              boxShadow: '0 0 0 2px #333, 0 32px 80px rgba(227,0,15,0.2), 0 40px 100px rgba(0,0,0,0.7)',
+            }}>
+              <div style={{ width: 80, height: 22, background: '#0a0a0a', borderRadius: 12, margin: '0 auto 6px' }} />
+              <div style={{ borderRadius: 28, overflow: 'hidden', lineHeight: 0 }}>
+                <img src="/dashboard-screenshot.jpg" alt="Dashboard SpeedSeek OS" style={{ width: '100%', display: 'block' }} />
+              </div>
+              <div style={{ width: 80, height: 4, background: '#444', borderRadius: 4, margin: '10px auto 0' }} />
+            </div>
+          </div>
+          {/* Feature list */}
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: 24 }}>
+            {[
+              [<BarChart3 size={20} />, 'Dashboard em tempo real', 'Veja de relance: OS abertas, em andamento, concluídas e faturamento — tudo numa tela.'],
+              [<FileText size={20} />, 'Crie OS em menos de 1 minuto', 'Preencha cliente, veículo, serviço e valor. Gere PDF profissional com um clique.'],
+              [<Users size={20} />, 'Histórico completo de clientes', 'Todos os atendimentos, veículos e contatos de cada cliente em um só lugar.'],
+              [<TrendingUp size={20} />, 'Relatórios detalhados', 'Gráficos por período. Saiba exatamente quanto sua oficina está faturando.'],
+            ].map(([icon, title, desc], i) => (
+              <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+                <div style={{ width: 42, height: 42, borderRadius: 11, background: 'rgba(227,0,15,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <span style={{ color: R }}>{icon as React.ReactNode}</span>
+                </div>
+                <div>
+                  <h4 style={{ fontWeight: 700, fontSize: 15, marginBottom: 5, color: WHITE }}>{title as string}</h4>
+                  <p style={{ color: MUTED, fontSize: 13, lineHeight: 1.65 }}>{desc as string}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div style={{ marginTop: 56, background: CARD, border: `1px solid ${BORDER}`, borderRadius: 20, padding: 'clamp(28px,4vw,48px)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap' as const, gap: 24 }}>
           <div>
             <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 8, color: WHITE }}>Quer ver o sistema ao vivo?</h3>
             <p style={{ color: MUTED, fontSize: 15 }}>Agende uma demonstração gratuita pelo WhatsApp. Mostramos tudo em 15 minutos.</p>
