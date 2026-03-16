@@ -160,7 +160,7 @@ export default function App() {
       {/* ── NAVBAR ── */}
       <nav style={{ position: 'fixed', top: 0, width: '100%', zIndex: 50, background: 'rgba(13,15,24,0.94)', backdropFilter: 'blur(14px)', borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: 1120, margin: '0 auto', padding: '0 24px', height: 64, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <img src="/logo.jpg" alt="SpeedSeek OS" style={{ height: 52, borderRadius: 8 }} />
+          <img src="/logo.png" alt="SpeedSeek OS" style={{ height: 52 }} />
           {/* desktop nav */}
           <div style={{ display: 'flex', alignItems: 'center', gap: 28 }} className="desktop-nav">
             {[['#funcionalidades','Recursos'],['#demo','Demo'],['#planos','Planos']].map(([href,label]) => (
@@ -465,7 +465,7 @@ export default function App() {
       {/* ── FOOTER ── */}
       <footer style={{ background:'#080a12', borderTop:`1px solid ${BORDER}`, padding:'36px 24px' }}>
         <div style={{ maxWidth:1120, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap' as const, gap:20 }}>
-          <img src="/logo.jpg" alt="SpeedSeek OS" style={{ height:32, borderRadius:6 }} />
+          <img src="/logo.png" alt="SpeedSeek OS" style={{ height:32, borderRadius:6 }} />
           <div style={{ display:'flex', gap:24, flexWrap:'wrap' as const }}>
             {[['#funcionalidades','Recursos'],['#planos','Planos'],['#demo','Demo'],[WA,'Contato']].map(([href,label]) => (
               <a key={label} href={href} target={href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer" style={{ color:MUTED, textDecoration:'none', fontSize:13 }}>{label}</a>
