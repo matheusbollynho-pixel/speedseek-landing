@@ -25,7 +25,7 @@ const WHITE = '#f1f3f9'
 
 /* ────────── helpers ────────── */
 const Btn = ({ href = WA, children, outline = false, large = false }: { href?: string; children: React.ReactNode; outline?: boolean; large?: boolean }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" style={{
+  <a href={href} target={href.startsWith('#') ? undefined : '_blank'} rel="noopener noreferrer" style={{
     display: 'inline-flex', alignItems: 'center', gap: 8,
     background: outline ? 'transparent' : R,
     color: '#fff',
