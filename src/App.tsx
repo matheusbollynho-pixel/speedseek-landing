@@ -2,7 +2,9 @@ import { useState } from 'react'
 import {
   CheckCircle, BarChart3, MessageCircle, Star, ChevronDown,
   Zap, Shield, Clock, Users, FileText, TrendingUp, ArrowRight,
-  Phone, Calendar, Package, Search, Bell, Menu, X
+  Phone, Calendar, Package, Bell, Menu, X,
+  LayoutGrid, ShoppingCart, Bot, DollarSign,
+  Gift, UserCheck, Sparkles, ClipboardList, Receipt, Wallet
 } from 'lucide-react'
 import './index.css'
 
@@ -252,15 +254,22 @@ export default function App() {
       <SectionWrap id="funcionalidades">
         <SectionHead tag="Recursos" title="Tudo que sua oficina precisa" sub="Ferramentas pensadas para o dia a dia de quem trabalha com mecânica" />
         <Grid cols="repeat(auto-fit,minmax(270px,1fr))">
-          <FeatCard icon={<FileText size={22} />} title="Ordens de Serviço" desc="Crie, edite e acompanhe OS completas com cliente, veículo, serviços e valores. Status em tempo real." />
-          <FeatCard icon={<Users size={22} />} title="Gestão de Clientes" desc="Cadastro completo com histórico de atendimentos e veículos. Nunca mais perca informação do cliente." />
-          <FeatCard icon={<Calendar size={22} />} title="Agenda de Serviços" desc="Organize as OS por data, horário e mecânico. Distribua tarefas com clareza para toda a equipe." />
-          <FeatCard icon={<BarChart3 size={22} />} title="Relatórios Completos" desc="Veja faturamento, serviços mais pedidos e desempenho da equipe. Dados para decisões inteligentes." />
-          <FeatCard icon={<Search size={22} />} title="Histórico de Atendimentos" desc="Todo atendimento registrado para sempre. Busque qualquer OS de anos atrás em segundos." />
-          <FeatCard icon={<MessageCircle size={22} />} title="WhatsApp Automático" desc="Envie PDF da OS, pesquisa de satisfação e lembretes de manutenção direto pelo WhatsApp do cliente." />
-          <FeatCard icon={<Bell size={22} />} title="Lembretes de Manutenção" desc="O sistema avisa o cliente quando chegar a hora da próxima revisão. Fidelização automática." />
-          <FeatCard icon={<Package size={22} />} title="Controle de Materiais" desc="Registre as peças usadas em cada OS e acompanhe o custo de material por serviço." />
-          <FeatCard icon={<Star size={22} />} title="Pesquisa de Satisfação" desc="Colete avaliações dos clientes automaticamente após cada serviço. Identifique pontos de melhoria." />
+          <FeatCard icon={<FileText size={22} />} title="Ordens de Serviço Completas" desc="Crie OS com cliente, moto, serviços, peças e assinatura digital do cliente na entrada e na entrega." />
+          <FeatCard icon={<LayoutGrid size={22} />} title="Quadro da Oficina" desc="Painel visual em tempo real com todas as OS abertas. Alertas de urgência, filtro por mecânico e troca de status na hora." />
+          <FeatCard icon={<Bot size={22} />} title="IA de Atendimento 24h" desc="Atendente virtual no WhatsApp: agenda horários, consulta o status do veículo, verifica estoque e responde dúvidas automaticamente, 24 horas por dia." />
+          <FeatCard icon={<Calendar size={22} />} title="Agendamento pelo WhatsApp" desc="Clientes agendam direto pelo WhatsApp via IA. O sistema controla a capacidade diária e confirma automaticamente." />
+          <FeatCard icon={<ShoppingCart size={22} />} title="Balcão / PDV" desc="Venda peças e serviços avulsos no balcão com emissão de nota numerada, desconto e lançamento automático no caixa." />
+          <FeatCard icon={<Package size={22} />} title="Estoque Completo" desc="Cadastro de produtos com entradas, saídas, movimentações por OS ou balcão, alertas de falta e histórico completo." />
+          <FeatCard icon={<Sparkles size={22} />} title="IA de Estoque" desc="Assistente inteligente que analisa seu estoque, identifica produtos em falta e sugere o que repor com base no histórico de uso." />
+          <FeatCard icon={<BarChart3 size={22} />} title="Fluxo de Caixa e Relatórios" desc="Entradas e saídas por dia, semana ou mês. Relatórios por mecânico, peças vendidas e comissões calculadas automaticamente." />
+          <FeatCard icon={<Bell size={22} />} title="WhatsApp Automático" desc="Confirmações de agendamento, aviso de OS pronta, lembrete dia anterior, follow-up de balcão e mensagens de aniversário." />
+          <FeatCard icon={<Gift size={22} />} title="Pós-venda e Fidelização" desc="Lembretes de manutenção automáticos por palavra-chave (troca de óleo, corrente, filtro) e desconto de aniversário personalizado por IA." />
+          <FeatCard icon={<Star size={22} />} title="Pesquisa de Satisfação" desc="Avaliações enviadas automaticamente via WhatsApp após cada serviço. Dashboard com notas, comentários e alertas de insatisfação." />
+          <FeatCard icon={<DollarSign size={22} />} title="Comissões da Equipe" desc="Defina a taxa de comissão de cada mecânico. O sistema calcula automaticamente com base nos serviços realizados." />
+          <FeatCard icon={<UserCheck size={22} />} title="Controle de Acesso" desc="Perfis de usuário com permissões diferentes. Restrinja acesso ao caixa, relatórios e pagamentos para cada membro da equipe." />
+          <FeatCard icon={<ClipboardList size={22} />} title="Agenda da Oficina" desc="Calendário semanal com turnos manhã/tarde. Agende, edite e cancele atendimentos e converta qualquer agendamento em OS com um clique." />
+          <FeatCard icon={<Receipt size={22} />} title="Boletos e Contas a Pagar" desc="Controle todas as despesas da oficina com vencimento, recorrência, alertas automáticos, PIX e leitura de código de barras." />
+          <FeatCard icon={<Wallet size={22} />} title="Fiados e Crédito" desc="Registre vendas no fiado, acompanhe o que cada cliente deve, aceite pagamentos parciais e envie cobranças automáticas pelo WhatsApp." />
         </Grid>
       </SectionWrap>
 
@@ -376,9 +385,9 @@ export default function App() {
         <SectionHead tag="Planos" title="Preço justo para qualquer oficina" sub="Sem taxa de adesão. Cancele quando quiser." />
         <Grid cols="repeat(auto-fit,minmax(280px,1fr))">
           {[
-            { name:'Básico', price:'R$ 79', desc:'Para oficinas que estão começando', features:['OS ilimitadas','Até 2 usuários','PDF da OS','Histórico de clientes','Suporte via WhatsApp'], hot:false },
-            { name:'Profissional', price:'R$ 129', desc:'O plano mais completo para crescimento', features:['Tudo do Básico','Usuários ilimitados','Fluxo de caixa','Relatórios completos','Pesquisa de satisfação','WhatsApp automático','Lembretes de manutenção'], hot:true },
-            { name:'Premium', price:'R$ 199', desc:'Para redes de oficinas e personalização total', features:['Tudo do Profissional','Domínio próprio','Logo personalizada','Suporte prioritário','Onboarding personalizado'], hot:false },
+            { name:'Básico', price:'R$ 79', desc:'Para oficinas que estão começando', features:['OS ilimitadas','Até 2 usuários','PDF da OS','Histórico de clientes','Agenda da oficina','Suporte via WhatsApp'], hot:false },
+            { name:'Profissional', price:'R$ 149', desc:'O plano mais completo para crescimento', features:['Tudo do Básico','Usuários ilimitados','Balcão / PDV','Estoque completo','Fluxo de caixa e relatórios','Pesquisa de satisfação','WhatsApp automático completo','Lembretes de manutenção e aniversário','Fiados e crédito de clientes','Boletos e contas a pagar'], hot:true },
+            { name:'Premium', price:'R$ 219', desc:'Automação total com IA para sua oficina', features:['Tudo do Profissional','IA de atendimento 24h no WhatsApp','IA de estoque inteligente','Domínio próprio','Logo personalizada','Suporte prioritário','Onboarding personalizado'], hot:false },
           ].map(p => (
             <div key={p.name} style={{
               borderRadius: 20, padding: '32px 26px',
