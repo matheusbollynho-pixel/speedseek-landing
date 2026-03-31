@@ -8,7 +8,7 @@ import {
 } from 'lucide-react'
 import './index.css'
 
-const WA = 'https://wa.me/5575823962639?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
+const WA = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
 const waPlano = (plano: string) => {
   if (plano === 'Básico') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=22a5c181c6f8471aa4a8ca707418b105'
   if (plano === 'Profissional') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=11af749b0fa144a68ed224e3fe240dfd'
