@@ -13,7 +13,7 @@ const waPlano = (plano: string) => {
   if (plano === 'Básico') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=22a5c181c6f8471aa4a8ca707418b105'
   if (plano === 'Profissional') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=11af749b0fa144a68ed224e3fe240dfd'
   if (plano === 'Premium') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=06aae1b35f394fc2903619cdc8d1c39c'
-  return `https://wa.me/5575988388629?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${encodeURIComponent(plano)}%20do%20SpeedSeek%20OS`
+  return `https://wa.me/557582396239?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${encodeURIComponent(plano)}%20do%20SpeedSeek%20OS`
 }
 const R = '#E3000F'
 const BG = '#0d0f18'
