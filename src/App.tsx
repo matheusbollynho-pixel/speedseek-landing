@@ -494,7 +494,7 @@ export default function App() {
         <div style={{ maxWidth:1120, margin:'0 auto', display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap' as const, gap:20 }}>
           <img src="/logo.png" alt="SpeedSeek OS" style={{ height: 28, width: 'auto' }} />
           <div style={{ display:'flex', gap:24, flexWrap:'wrap' as const }}>
-            {[['#funcionalidades','Recursos'],['#planos','Planos'],['#demo','Demo'],[WA,'Contato']].map(([href,label]) => (
+            {[['#funcionalidades','Recursos'],['#planos','Planos'],['#demo','Demo'],[WA,'Contato'],['/termos','Termos de Uso'],['/privacidade','Privacidade']].map(([href,label]) => (
               <a key={label} href={href} target={href.startsWith('http')?'_blank':undefined} rel="noopener noreferrer" style={{ color:MUTED, textDecoration:'none', fontSize:13 }}>{label}</a>
             ))}
           </div>
