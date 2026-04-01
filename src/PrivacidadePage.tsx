@@ -18,7 +18,7 @@ export default function PrivacidadePage() {
         {[
           {
             titulo: '1. Quem somos',
-            texto: `O SpeedSeek OS é uma plataforma de gestão para oficinas mecânicas operada por Matheus da Silva Alves, CPF 032.297.245-00. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos os dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).`,
+            texto: `O SpeedSeek OS é uma plataforma de gestão para oficinas mecânicas operada por Matheus da Silva Alves - ME, CNPJ 24.890.547/0001-78, com endereço na BA-210, 913A, Paulo Afonso – BA, CEP 48609-175. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos os dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).`,
           },
           {
             titulo: '2. Quais dados coletamos',

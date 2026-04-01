@@ -18,7 +18,7 @@ export default function TermosPage() {
         {[
           {
             titulo: '1. Das partes',
-            texto: `Estes Termos de Uso regulam a relação entre o SpeedSeek OS, plataforma de gestão para oficinas mecânicas, operada por Matheus da Silva Alves, CPF 032.297.245-00, residente à Rua JK, 596, BTN2, Paulo Afonso – BA, CEP 48609-060, doravante denominado "SpeedSeek OS" ou "Plataforma", e o contratante, pessoa física ou jurídica que adquirir ou utilizar o serviço, denominado "Cliente" ou "Usuário".`,
+            texto: `Estes Termos de Uso regulam a relação entre o SpeedSeek OS, plataforma de gestão para oficinas mecânicas, operada por Matheus da Silva Alves - ME, CNPJ 24.890.547/0001-78, com endereço na BA-210, 913A, Paulo Afonso – BA, CEP 48609-175, doravante denominado "SpeedSeek OS" ou "Plataforma", e o contratante, pessoa física ou jurídica que adquirir ou utilizar o serviço, denominado "Cliente" ou "Usuário".`,
           },
           {
             titulo: '2. Do objeto',
