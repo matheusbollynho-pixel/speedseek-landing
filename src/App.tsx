@@ -303,7 +303,7 @@ export default function App() {
         {/* YouTube Video */}
         <div style={{ borderRadius: 16, overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.6)', border: `1px solid ${BORDER}`, marginBottom: 56, position: 'relative', paddingTop: '56.25%' }}>
           <iframe
-            src="https://www.youtube.com/embed/MDnr712zrXo?rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/5RRKBRUyqds?rel=0&modestbranding=1"
             title="SpeedSeek OS - Demonstração"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
