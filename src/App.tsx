@@ -9,6 +9,7 @@ import {
 import './index.css'
 
 const WA = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
+const WA_DEMO = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Gostaria%20de%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20SpeedSeek%20OS'
 const waPlano = (plano: string) => {
   if (plano === 'Básico') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=22a5c181c6f8471aa4a8ca707418b105'
   if (plano === 'Profissional') return 'https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=11af749b0fa144a68ed224e3fe240dfd'
@@ -180,7 +181,7 @@ export default function App() {
             </p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' as const, marginBottom: 44 }}>
               <Btn large><Zap size={17} /> Testar grátis</Btn>
-              <Btn large outline href="#demo">Ver demonstração</Btn>
+              <Btn large outline href={WA_DEMO}>Ver demonstração</Btn>
             </div>
             {/* trust strip */}
             <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap' as const }}>
@@ -376,7 +377,7 @@ export default function App() {
             <h3 style={{ fontSize: 22, fontWeight: 800, marginBottom: 8, color: WHITE }}>Quer ver o sistema ao vivo?</h3>
             <p style={{ color: MUTED, fontSize: 15 }}>Agende uma demonstração gratuita pelo WhatsApp. Mostramos tudo em 15 minutos.</p>
           </div>
-          <Btn large><Phone size={17} /> Solicitar demonstração</Btn>
+          <Btn large href={WA_DEMO}><Phone size={17} /> Solicitar demonstração</Btn>
         </div>
       </SectionWrap>
 
