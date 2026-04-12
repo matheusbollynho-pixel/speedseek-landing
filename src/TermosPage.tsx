@@ -33,8 +33,8 @@ export default function TermosPage() {
             texto: `Os serviços são oferecidos nos planos Básico (R$ 79/mês), Profissional (R$ 149/mês) e Premium (R$ 219/mês), conforme detalhado na página de planos. O pagamento é realizado via Asaas, de forma recorrente mensal. O período de teste gratuito é de 7 (sete) dias, sem cobrança. Após o período de teste, a assinatura é ativada automaticamente caso não haja cancelamento.\n\nO não pagamento da mensalidade implica na suspensão do acesso à plataforma. Os dados permanecem armazenados por até 30 dias após o vencimento, podendo ser recuperados mediante regularização do pagamento.`,
           },
           {
-            titulo: '5. Do cancelamento',
-            texto: `O Usuário pode cancelar a assinatura a qualquer momento, sem multa ou fidelidade, entrando em contato pelo WhatsApp ou e-mail speedseekos@gmail.com. O cancelamento encerra o acesso ao final do período já pago. Não há reembolso proporcional de períodos não utilizados.`,
+            titulo: '5. Do cancelamento e retenção de dados',
+            texto: `O Usuário pode cancelar a assinatura a qualquer momento, sem multa ou fidelidade, entrando em contato pelo WhatsApp ou e-mail speedseekos@gmail.com. O cancelamento encerra o acesso ao final do período já pago. Não há reembolso proporcional de períodos não utilizados.\n\nApós o cancelamento, os dados do Usuário ficam disponíveis por 30 (trinta) dias. Durante esse período, o Usuário pode solicitar a exportação completa de seus dados (clientes, ordens de serviço, relatórios) pelo WhatsApp ou e-mail. Após os 30 dias, todos os dados são removidos permanentemente dos servidores do SpeedSeek OS.`,
           },
           {
             titulo: '6. Das responsabilidades do usuário',
@@ -42,7 +42,7 @@ export default function TermosPage() {
           },
           {
             titulo: '7. Das responsabilidades do SpeedSeek OS',
-            texto: `O SpeedSeek OS se compromete a:\n• Manter a plataforma disponível com esforço razoável de uptime;\n• Realizar backups regulares dos dados;\n• Notificar o Usuário em caso de manutenção programada que afete a disponibilidade;\n• Não comercializar ou compartilhar os dados dos Usuários com terceiros, exceto quando exigido por lei.\n\nO SpeedSeek OS não se responsabiliza por perdas decorrentes de falhas de conexão à internet do Usuário, uso indevido da plataforma ou por atos de terceiros fora do controle da plataforma.`,
+            texto: `O SpeedSeek OS se compromete a:\n• Manter a plataforma disponível com meta de uptime de 99% ao mês (excluindo janelas de manutenção programada);\n• Realizar backups automáticos diários dos dados;\n• Notificar o Usuário com antecedência mínima de 2 horas em caso de manutenção programada;\n• Não comercializar ou compartilhar os dados dos Usuários com terceiros, exceto quando exigido por lei.\n\nEm caso de indisponibilidade superior a 24 horas consecutivas por falha exclusiva do SpeedSeek OS, o Usuário poderá solicitar crédito proporcional na próxima mensalidade.\n\nO SpeedSeek OS não se responsabiliza por perdas decorrentes de falhas de conexão à internet do Usuário, uso indevido da plataforma ou por atos de terceiros fora do controle da plataforma.`,
           },
           {
             titulo: '8. Da propriedade intelectual',

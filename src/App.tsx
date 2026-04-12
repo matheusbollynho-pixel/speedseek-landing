@@ -10,6 +10,7 @@ import './index.css'
 
 const WA = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
 const WA_DEMO = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Gostaria%20de%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20SpeedSeek%20OS'
+const APP_URL = 'https://app.speedseekos.com.br'
 const waPlano = (plano: string) => {
   if (plano === 'Básico') return 'https://www.asaas.com/c/vz4xmubsyo6qjny1'
   if (plano === 'Profissional') return 'https://www.asaas.com/c/8swycr4f636vo1za'
@@ -180,7 +181,7 @@ export default function App() {
               Crie ordens de serviço, gerencie clientes, acompanhe mecânicos e emita relatórios — tudo pelo celular, sem instalação.
             </p>
             <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' as const, marginBottom: 44 }}>
-              <Btn large><Zap size={17} /> Testar grátis</Btn>
+              <Btn large href={APP_URL}><Zap size={17} /> Criar conta grátis</Btn>
               <Btn large outline href={WA_DEMO}>Ver demonstração</Btn>
             </div>
             {/* trust strip */}
@@ -487,10 +488,16 @@ export default function App() {
           <p style={{ color:'rgba(255,255,255,0.82)', fontSize:17, marginBottom:40, lineHeight:1.65 }}>
             Mais de 500 ordens de serviço gerenciadas. Junte-se às oficinas que já usam o SpeedSeek OS.
           </p>
-          <a href={WA} target="_blank" rel="noopener noreferrer"
-            style={{ display:'inline-flex', alignItems:'center', gap:10, background:'#fff', color:R, padding:'16px 40px', borderRadius:14, fontWeight:800, fontSize:18, textDecoration:'none' }}>
-            <MessageCircle size={22} /> Começar agora
-          </a>
+          <div style={{ display:'flex', gap:14, justifyContent:'center', flexWrap:'wrap' as const }}>
+            <a href={APP_URL} target="_blank" rel="noopener noreferrer"
+              style={{ display:'inline-flex', alignItems:'center', gap:10, background:'#fff', color:R, padding:'16px 40px', borderRadius:14, fontWeight:800, fontSize:18, textDecoration:'none' }}>
+              <Zap size={22} /> Criar conta grátis
+            </a>
+            <a href={WA_DEMO} target="_blank" rel="noopener noreferrer"
+              style={{ display:'inline-flex', alignItems:'center', gap:10, background:'transparent', color:'#fff', border:'1px solid rgba(255,255,255,0.3)', padding:'16px 32px', borderRadius:14, fontWeight:700, fontSize:16, textDecoration:'none' }}>
+              <MessageCircle size={20} /> Ver demonstração
+            </a>
+          </div>
           <p style={{ marginTop:16, color:'rgba(255,255,255,0.65)', fontSize:13 }}>7 dias grátis · Sem cartão · Suporte incluso</p>
         </div>
       </section>
