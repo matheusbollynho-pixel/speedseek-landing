@@ -10,7 +10,7 @@ import './index.css'
 
 const WA = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Tenho%20interesse%20no%20SpeedSeek%20OS'
 const WA_DEMO = 'https://wa.me/557582396239?text=Ol%C3%A1!%20Gostaria%20de%20ver%20uma%20demonstra%C3%A7%C3%A3o%20do%20SpeedSeek%20OS'
-const APP_URL = 'https://app.speedseekos.com.br'
+const APP_URL = 'https://app.speedseekos.com.br/?cadastro=1'
 const waPlano = (plano: string) => {
   if (plano === 'Básico') return 'https://www.asaas.com/c/vz4xmubsyo6qjny1'
   if (plano === 'Profissional') return 'https://www.asaas.com/c/8swycr4f636vo1za'
