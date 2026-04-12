@@ -460,6 +460,11 @@ export default function App() {
             ['Meus dados ficam seguros?','Sim. Dados armazenados em nuvem com backup automático. Você nunca perde nenhuma informação.'],
             ['Como é feito o pagamento?','Aceitamos Pix e cartão de crédito. Plano mensal sem fidelidade, cancele quando quiser.'],
             ['Tenho suporte para configurar?','Sim! Nosso time te ajuda a configurar e treinar a equipe via WhatsApp, sem custo adicional.'],
+            ['Posso migrar dados de outro sistema?','Sim. Nossa equipe te ajuda a importar clientes e histórico. Entre em contato pelo WhatsApp para avaliarmos o seu caso.'],
+            ['Funciona offline?','Não. O SpeedSeek OS é 100% na nuvem e precisa de internet. A vantagem é que funciona em qualquer dispositivo, sem instalação, e seus dados ficam sempre seguros e com backup automático.'],
+            ['Quantos clientes posso cadastrar?','Ilimitados. Não há limite de clientes, ordens de serviço ou histórico no sistema.'],
+            ['O sistema emite nota fiscal?','Não emite NF-e diretamente, mas integra com a gestão de OS, pagamentos e relatórios. Para emissão de nota fiscal, recomendamos usar um emissor externo em conjunto.'],
+            ['O que acontece com meus dados se eu cancelar?','Seus dados ficam disponíveis por 30 dias após o cancelamento. Nesse período você pode solicitar a exportação completa. Após esse prazo, as informações são removidas permanentemente dos nossos servidores.'],
           ].map(([q,a],i) => (
             <div key={i} style={{ background:BG, border:`1px solid ${BORDER}`, borderRadius:12, overflow:'hidden' }}>
               <button onClick={() => setOpenFaq(openFaq===i?null:i)} type="button"
