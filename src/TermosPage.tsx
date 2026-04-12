@@ -30,7 +30,7 @@ export default function TermosPage() {
           },
           {
             titulo: '4. Dos planos e pagamentos',
-            texto: `Os serviços são oferecidos nos planos Básico (R$ 79/mês), Profissional (R$ 149/mês) e Premium (R$ 219/mês), conforme detalhado na página de planos. O pagamento é realizado via Mercado Pago, de forma recorrente mensal. O período de teste gratuito é de 7 (sete) dias, sem cobrança. Após o período de teste, a assinatura é ativada automaticamente caso não haja cancelamento.\n\nO não pagamento da mensalidade implica na suspensão do acesso à plataforma. Os dados permanecem armazenados por até 30 dias após o vencimento, podendo ser recuperados mediante regularização do pagamento.`,
+            texto: `Os serviços são oferecidos nos planos Básico (R$ 79/mês), Profissional (R$ 149/mês) e Premium (R$ 219/mês), conforme detalhado na página de planos. O pagamento é realizado via Asaas, de forma recorrente mensal. O período de teste gratuito é de 7 (sete) dias, sem cobrança. Após o período de teste, a assinatura é ativada automaticamente caso não haja cancelamento.\n\nO não pagamento da mensalidade implica na suspensão do acesso à plataforma. Os dados permanecem armazenados por até 30 dias após o vencimento, podendo ser recuperados mediante regularização do pagamento.`,
           },
           {
             titulo: '5. Do cancelamento',
@@ -58,7 +58,7 @@ export default function TermosPage() {
           },
           {
             titulo: '11. Do contato',
-            texto: `Para dúvidas, cancelamentos ou suporte:\n📧 speedseekos@gmail.com\n📱 WhatsApp: (75) 8239-6239\n🌐 speedseekos.com.br`,
+            texto: `Para dúvidas, cancelamentos ou suporte:\n📧 speedseekos@gmail.com\n📱 WhatsApp: (75) 98239-6239\n🌐 speedseekos.com.br`,
           },
         ].map(({ titulo, texto }) => (
           <div key={titulo} style={{ marginBottom: 40, borderBottom: `1px solid ${BORDER}`, paddingBottom: 32 }}>

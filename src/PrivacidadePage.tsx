@@ -22,7 +22,7 @@ export default function PrivacidadePage() {
           },
           {
             titulo: '2. Quais dados coletamos',
-            texto: `Coletamos os seguintes dados:\n\n• Dados de cadastro: nome, e-mail, telefone, CNPJ/CPF e endereço da empresa contratante;\n• Dados de uso: informações sobre como você utiliza a plataforma (páginas acessadas, funcionalidades utilizadas);\n• Dados inseridos na plataforma: informações sobre os clientes finais da sua oficina (nome, telefone, CPF, veículos), que são de responsabilidade do Usuário;\n• Dados de pagamento: processados diretamente pelo Mercado Pago — o SpeedSeek OS não armazena dados de cartão.`,
+            texto: `Coletamos os seguintes dados:\n\n• Dados de cadastro: nome, e-mail, telefone, CNPJ/CPF e endereço da empresa contratante;\n• Dados de uso: informações sobre como você utiliza a plataforma (páginas acessadas, funcionalidades utilizadas);\n• Dados inseridos na plataforma: informações sobre os clientes finais da sua oficina (nome, telefone, CPF, veículos), que são de responsabilidade do Usuário;\n• Dados de pagamento: processados diretamente pelo Asaas — o SpeedSeek OS não armazena dados de cartão.`,
           },
           {
             titulo: '3. Como usamos os dados',
@@ -34,7 +34,7 @@ export default function PrivacidadePage() {
           },
           {
             titulo: '5. Compartilhamento de dados',
-            texto: `Não vendemos nem alugamos seus dados. Podemos compartilhar com:\n• Supabase: infraestrutura de banco de dados e autenticação (dados armazenados em servidores seguros);\n• Mercado Pago: processamento de pagamentos;\n• UazAPI: envio de mensagens via WhatsApp (somente para as automações ativas na sua conta);\n• Anthropic: processamento de mensagens pela IA de atendimento (somente conteúdo das mensagens para geração de respostas);\n• Autoridades competentes: quando exigido por lei ou decisão judicial.`,
+            texto: `Não vendemos nem alugamos seus dados. Podemos compartilhar com:\n• Supabase: infraestrutura de banco de dados e autenticação (dados armazenados em servidores seguros);\n• Asaas: processamento de pagamentos e cobranças recorrentes;\n• UazAPI: envio de mensagens via WhatsApp (somente para as automações ativas na sua conta);\n• Anthropic: processamento de mensagens pela IA de atendimento (somente conteúdo das mensagens para geração de respostas);\n• Autoridades competentes: quando exigido por lei ou decisão judicial.`,
           },
           {
             titulo: '6. Dados dos clientes finais da sua oficina',
@@ -58,7 +58,7 @@ export default function PrivacidadePage() {
           },
           {
             titulo: '11. Contato com o encarregado (DPO)',
-            texto: `Responsável pela proteção de dados:\nMatheus da Silva Alves\n📧 speedseekos@gmail.com\n📱 (75) 8239-6239`,
+            texto: `Responsável pela proteção de dados:\nMatheus da Silva Alves\n📧 speedseekos@gmail.com\n📱 (75) 98239-6239`,
           },
           {
             titulo: '12. Alterações nesta política',
